@@ -1,7 +1,7 @@
 // Panthiya service worker: the app opens instantly and works offline. Data has its own offline
 // cache (Firestore), so this only keeps the app's files and fonts.
-const VERSION = 'b65c2cd001';
-const SHELL = ["/panthiya/","/panthiya/index.html","/panthiya/app-2223e65d.css","/panthiya/app-JQUQND6F.js","/panthiya/manifest.webmanifest","/panthiya/icon.svg","/panthiya/icon-192.png","/panthiya/icon-512.png"];
+const VERSION = '072c650234';
+const SHELL = ["/panthiya/","/panthiya/index.html","/panthiya/app-7bc66d47.css","/panthiya/app-3GO7QDEB.js","/panthiya/manifest.webmanifest","/panthiya/icon.svg","/panthiya/icon-192.png","/panthiya/icon-512.png"];
 const CACHE = 'panthiya-' + VERSION;
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
